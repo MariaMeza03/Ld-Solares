@@ -1,0 +1,161 @@
+.domestic{
+    width: 100%;
+	position: relative;
+	height: auto;
+    /*margin-top: 80px;*/
+    @include flex-center-center;
+    padding: 30px 0 30px 0;
+
+    @media(min-width:1199px){
+        height: auto;
+        padding: 60px 0 60px 0;
+    }
+
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column-reverse;
+        gap: 15px;
+
+        @media(min-width:1199px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+		}
+    }
+
+    &__text{
+        width: 100%;
+        @include flex-center-center;
+        flex-direction: column;
+
+        @media(min-width:1199px){ //*table
+            @include flex-start-center;
+        }
+        
+        h1{
+            color: $Bluish_Purple;
+            font-size: 20px;
+            font-family: Poppins-Bold;
+            text-align: center;
+            
+            @media(min-width:768px){
+                font-size: 25px;
+            }
+    
+            @media(min-width:1199px){
+                font-size: 30px;
+            }
+            
+            @media(min-width:1700px){
+                font-size: 35px;
+            }
+        }
+
+        p{
+            padding-top: 15px;
+            color: $black;
+            font-size: 15px;
+            text-align: center;
+
+            @media(min-width: 1199px){
+                text-align: start;
+                font-size: 18px;  
+            }
+        }
+
+        &__inputs{
+            width: 100%;
+            
+            &__input{
+                @media(min-width:1199px){
+                    padding:7.5px 0;
+                }
+
+                label{
+                    color: $Bluish_Purple;
+                    font-family:Poppins-Bold;
+                    font-size: 15px;
+        
+                    @media(min-width: 1199px){
+                        font-size: 18px;
+                    }
+                }
+    
+                input{
+                    width: 100%;
+                    padding: 15px;
+                    background-color: $harp;
+                    border: none;
+                    border-radius: 7px;
+                    margin-top: 10px;
+                }
+                
+                textarea{
+                    height: 200px;
+                    padding: 15px;
+                    background-color: $harp;
+                    border: none;
+                    border-radius: 7px;
+                    margin-top: 10px;
+                }
+
+                &__button{
+                    width: 100%;
+                    @include flex-center-center;
+
+                    button{
+                        width: 100%;
+                        border: 2px solid $Bluish_Purple;
+                        margin-top: 15px;
+                        background-color:$Bluish_Purple;
+                        font-family: Poppins-Bold;
+                        font-weight: bold;
+                        padding: 15px;
+                        color:$white;
+                        border-radius: 20px;
+                        text-align: center;
+            
+                        @media(min-width:300px){
+                            font-size: 16px;         
+                        }
+            
+                        @media(min-width:768px){
+                            padding: 15px 80px ;
+                            font-size: 18px;
+                            
+                        }
+            
+                        @media(min-width:1199px){
+                            margin-top: 30px;
+                        }
+             
+                    }
+            
+                    button:hover{
+                    background-color:$white ;
+                    color: $Bluish_Purple;
+                    border: 2px solid $Bluish_Purple;
+                }
+                }
+            }
+
+        }
+
+    }
+
+
+    &__imagen{
+        @include flex-center-start;
+        margin: auto;
+        width: 90%;
+
+
+        @media(min-width: 1199px){
+            width: 100%;
+            height:auto;
+        }
+    }
+
+
+} 

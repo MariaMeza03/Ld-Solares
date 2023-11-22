@@ -1,0 +1,140 @@
+.hero{
+    width: 100%;
+	position: relative;
+	height: auto;
+    margin-top: 80px;
+   @include flex-center-center;
+
+
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column-reverse;
+
+        @media(min-width:1199px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+		}
+    }
+
+    &__text{
+        width: 100%;
+        @include flex-center-center;
+        flex-direction: column;
+
+        @media(min-width:1199px){ //*table
+            @include flex-start-center;
+        }
+        
+        h1{
+            color: $Meteorite;
+            font-size: 30px;
+            font-weight:bold;
+            text-align: center;
+            font-family: Poppins-Bold;
+            line-height: 32px;
+
+            @media(min-width:768px){ //*phone
+                font-size: 38px;
+                line-height:50px;
+            }
+
+            @media(min-width:1199px){ //*table
+                text-align: start;
+                font-size: 50px;
+            }
+
+            @media(min-width:1700px){//*Desktop
+                line-height: 72px;
+                font-size: 66px;
+            }
+        }
+
+        span{
+            font-size: 30px;
+            font-weight:bold;
+            text-align: center;
+            font-family: Poppins-Bold;
+            line-height: 32px;
+
+            @media(min-width:768px){ //*phone
+                font-size: 38px;
+                line-height:50px;
+            }
+
+            @media(min-width:1199px){ //*table
+                text-align: start;
+                font-size: 50px;
+            }
+
+            @media(min-width:1700px){//*Desktop
+                line-height: 72px;
+                font-size: 66px;
+            }
+            
+            color: $Bluish_Purple;
+        }
+
+        p{
+            padding-top: 25px;
+            color: $Meteorite;
+            font-size: 20px;
+            text-align: center;
+            line-height: 25px;
+            
+            @media(min-width:768px){
+                font-size: 25px;
+                line-height: 32px;
+            }
+            @media(min-width:1199px){ //*table
+                text-align: start;
+            }
+        }
+
+        &__button{
+            @include flex-center-center;
+
+            @media(min-width:1199px){
+                @include flex-center-start;
+            }
+
+            a{
+                width: 100%;
+                border: 2px solid $Bluish_Purple;
+                margin-top: 30px;
+                background-color:$Bluish_Purple ;
+                font-family: Poppins-Bold;
+                padding: 20px 30px ;
+                color:white;
+                font-size: 15px;
+                border-radius: 20px;
+                text-align: center;
+
+                @media(min-width:300px){
+                    font-size: 16px;         
+                }
+    
+                @media(min-width:768px){
+                    font-size: 18px;
+                    
+                }
+            }
+
+            a:hover{
+                background-color:$white ;
+                color: $Bluish_Purple;
+                border: 2px solid $Bluish_Purple;
+            }
+        }
+    }
+
+    &__imagen{
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        @include flex-center-start;
+    }
+
+} 
