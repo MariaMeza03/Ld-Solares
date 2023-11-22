@@ -11,36 +11,16 @@
 	.container{
 		@include flex-center-center;
 		flex-direction: column;		
-
-		@media(min-width: 992px){
-			display: grid;
-		grid-template-columns: repeat(3, 1fr);	
-		}
 	}
-
-	&__logo{
-		margin: auto;
-		width: 150px;
-		
-		@media(min-width:1199px){
-			width: 200px;
-		}
-	}
-
 	&__text{
 		@include flex-center-center;
 		flex-direction: column;
-
-		@media(min-width:1199px){
-			@include flex-start-center;
-			grid-column: 2 / 4;
-		}
 		
 		h1{
 		color: white;
 		line-height:25px;
 		font-size: 13px;
-		font-weight: 300;
+		font-weight: 600;
 		text-align: center;
 		line-height: 20px;
 

@@ -1,10 +1,10 @@
 .menu{
-	width: 70%;
+	width: 65%;
 	height: 100vh;
 	position: fixed;
 	top: 0;
     left: -200%;
-	background: rgba(255,255,255,0.8);
+	background-color: $white;
 	z-index: 100;
 	padding: 30px 5px;
 	transition: 0.3s;
@@ -13,37 +13,99 @@
 		left: 0%;
 	}
 
-	&__links{
-		@include flex-j-center;
+
+	.container{
+		height: 100%;
+		display: flex;
 		flex-direction: column;
+	}
 
-        &__contact{
-            @include flex-center-center;
-            flex-direction: column;
+	&__media{
+		display: flex;
+		gap:10px;
+		padding-bottom: 30px;
 
-            &__item{
-                 @include flex-center-center;
-                 padding: 10px 0;
-                 gap: 10px;
+		a{
+			width: 19px;
+			color: $mikado_yellow;
+		}
 
-                 @media(min-width:1199px){
-                    flex-direction: row;
-                 }
+	}
 
-                 &__icon{
-					width: 20px;
-                }
+	&__link{
 
-                a.phone{
-                    font-size: 15px;
-                    color:$Meteorite;
-					font-weight: 400;
-                    transition: 0.3s;
-        
-                } 
-            }
-        }
+		a,button{
+			font-size: 12px;
+			color: $black;
+			text-transform: uppercase;
+			transition: 0.3s;
+		}
 
+		hr{
+			margin: 10px 0;
+			width: 100%;
+			border: 0.09px solid $carbon_grey;
+		}
+
+		&__submenu{
+			padding: 10px;
+			display: none;
+			z-index: 200;
+
+			&--active{
+				@include flex-j-center;
+				flex-direction: column;
+			}
+		}
+
+		&--one{
+			&:hover{
+				color: $mikado_yellow;
+			}
+			
+		}
+
+		&--two{
+			&:hover{
+				color: $mikado_yellow;
+			}
+			
+		}
+
+		&--three{
+			&:hover{
+				color: $mikado_yellow;
+			}
+			
+		}
+
+		&--four{
+			&:hover{
+				color: $mikado_yellow;
+			}
+			
+		}
+
+		&--five{
+			&:hover{
+				color: $mikado_yellow;
+			}
+			
+		}
+
+		&--six{
+			&:hover{
+				color: $mikado_yellow;
+			}
+			
+		}
+
+		&--seven{
+			&:hover{
+				color: $mikado_yellow;
+			}
+			
+		}
 	}
 
 

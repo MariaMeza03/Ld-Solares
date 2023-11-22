@@ -10,6 +10,7 @@
 @import 'layout/header';
 @import 'layout/menu';
 @import 'layout/footer';
+@import 'layout/contact';
 @import 'layout/whatsapp';
 
 //*components
@@ -28,37 +29,22 @@
 @import 'components/aviso-de-privacidad';
 
 @font-face {
-	font-family:  Poppins-Regular;
-	src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+	font-family:  Yantramanav-Regular;
+	src: url('../fonts/Yantramanav-Regular.ttf') format('truetype');
 	font-display: swap;
 
   }
 
   @font-face {
-	font-family:  Poppins-Bold;
-	src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+	font-family:  Yantramanav-Bold;
+	src: url('../fonts/Yantramanav-Bold.ttf') format('truetype');
 	font-display: swap;
 
   }
-
-  @font-face {
-	font-family: Poppins-Bold;
-	src: url('../fonts/Poppins-Bold.ttf') format('truetype');
-	font-display: swap;
-
-  }
-
-  @font-face {
-	font-family: Poppins-Regular;
-	src: url('../fonts/Poppins-Regular.ttf') format('truetype');
-	font-display: swap;
-
-  }
-
 
   
 *{
-	font-family: Poppins-Regular;
+	font-family: Yantramanav-Regular;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
