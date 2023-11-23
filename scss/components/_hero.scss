@@ -22,9 +22,9 @@
         h1{
             color: $mikado_yellow;
             font-size: 30px;
-            font-weight:bold;
             text-align: center;
             line-height: 32px;
+            font-family:  Yantramanav-Bold;
 
             @media(min-width:768px){ //*phone
                 font-size: 38px;
@@ -70,6 +70,7 @@
                 border: 2px solid $mikado_yellow;
                 margin-top: 30px;
                 background-color:$mikado_yellow ;
+                font-family:  Yantramanav-Bold;
                 padding: 20px 30px ;
                 color:white;
                 font-size: 15px;
@@ -97,21 +98,37 @@
 
     &__media{
         position: absolute;
-        bottom: 0;
+        bottom: 0px;
         background-image:url('../img/figura-fondo.png');	
-        background-size:cover;
+        background-size:contain;
         background-position:center;
         background-repeat: no-repeat; 
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
         gap: 10px;
-        padding: 30px;
+        padding: 63px 200px 0 200px;
+        display: none;
 
-        a{
-			width: 30px;
-            height: 30px;
-			color: $white;
-		}
+        @media(min-width: 1199px){
+           display: block;
+        } 
+
+
+        &__contet{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+            position: relative;
+            top: -25px;
+       
+
+            a{
+                width: 40px;
+                height: 40px;
+                color: $white;
+               
+            }
+        }
+
+        
     }
 
 
