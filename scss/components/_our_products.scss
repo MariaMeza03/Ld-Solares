@@ -52,15 +52,16 @@
         }
         
         &__decoration{
-            padding-top: 15px ;
+            padding: 15px  0;
             @include flex-center-center;
             gap: 20px;
-            position: relative;
 
 
             @media(min-width:1199px){
+                position: relative;
                 right: 13%;
                 @include flex-center-end;
+                padding: 30px  0;
             }
 
             &__controls{
@@ -106,14 +107,34 @@
         
             }
 
-            &__button{
+        }
+
+        &__imagen{
+            height: auto;
+            padding: 0 5px;
+
+            @media(min-width:768px){
+                padding: 0 18px;
+            }
+
+            img{
+                border-radius: 15px;
+                width: auto;
+                height: 100%;
+            }
+
+        }
+
+        &__button{
                 position: relative;
-                bottom:  0px;
+                bottom:  30px;
                 @include flex-center-center;
+                left:  34%;
         
                 @media(max-width:1199px){
                     width: 90%;
                     margin: auto;
+                    left: 0;
                 }
         
                 a{
@@ -149,36 +170,17 @@
                 }
             }
 
-
-        }
-
-        &__imagen{
-            height: 275px;
-            padding: 0 5px;
-
-            @media(min-width:768px){
-                padding: 0 18px;
-            }
-
-            img{
-                border-radius: 15px;
-                width: auto;
-                height: 100%;
-            }
-
-        }
-
     }
 }
 
 .swiper_products{
 	width: 100%;
-	height: 100%;
+	height: 500px;
     
 
 		.swiper-slide{
 			width: 100% !important;
-			height: 100%;
+			height: 375px;
             @include flex-center-center;
 			
 			/* Center slide text vertically */
@@ -193,12 +195,12 @@
 			-webkit-align-items: center;
 
 
-            @media(min-width:997px){
-				width:50% !important;
+            @media(min-width:992px){
+				width:33.33% !important;
 
 			}
 
-			@media(min-width: 1299px){
+			@media(min-width: 1300px){
 				width: 25% !important;
 			}
 

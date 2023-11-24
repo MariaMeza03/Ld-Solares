@@ -1074,18 +1074,19 @@
           line-height: 72px;
           font-size: 66px; } }
     .our_products__carousel__decoration {
-      padding-top: 15px;
+      padding: 15px  0;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 20px;
-      position: relative; }
+      gap: 20px; }
       @media (min-width: 1199px) {
         .our_products__carousel__decoration {
+          position: relative;
           right: 13%;
           display: flex;
           align-items: center;
-          justify-content: flex-end; } }
+          justify-content: flex-end;
+          padding: 30px  0; } }
       .our_products__carousel__decoration__controls {
         display: flex;
         align-items: center;
@@ -1117,41 +1118,8 @@
             width: 35px;
             fill: black;
             padding: 5px; }
-      .our_products__carousel__decoration__button {
-        position: relative;
-        bottom: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        @media (max-width: 1199px) {
-          .our_products__carousel__decoration__button {
-            width: 90%;
-            margin: auto; } }
-        .our_products__carousel__decoration__button a {
-          border: 2px solid #F7C200;
-          margin-top: 15px;
-          background-color: #F7C200;
-          font-family: Yantramanav-Bold;
-          padding: 15px;
-          color: white;
-          border-radius: 5px;
-          text-align: center; }
-          @media (min-width: 300px) {
-            .our_products__carousel__decoration__button a {
-              font-size: 16px; } }
-          @media (min-width: 768px) {
-            .our_products__carousel__decoration__button a {
-              padding: 15px 80px;
-              font-size: 18px; } }
-          @media (min-width: 1199px) {
-            .our_products__carousel__decoration__button a {
-              margin-top: 30px; } }
-        .our_products__carousel__decoration__button a:hover {
-          background-color: white;
-          color: #F7C200;
-          border: 2px solid #F7C200; }
     .our_products__carousel__imagen {
-      height: 275px;
+      height: auto;
       padding: 0 5px; }
       @media (min-width: 768px) {
         .our_products__carousel__imagen {
@@ -1160,13 +1128,48 @@
         border-radius: 15px;
         width: auto;
         height: 100%; }
+    .our_products__carousel__button {
+      position: relative;
+      bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 34%; }
+      @media (max-width: 1199px) {
+        .our_products__carousel__button {
+          width: 90%;
+          margin: auto;
+          left: 0; } }
+      .our_products__carousel__button a {
+        border: 2px solid #F7C200;
+        margin-top: 15px;
+        background-color: #F7C200;
+        font-family: Yantramanav-Bold;
+        padding: 15px;
+        color: white;
+        border-radius: 5px;
+        text-align: center; }
+        @media (min-width: 300px) {
+          .our_products__carousel__button a {
+            font-size: 16px; } }
+        @media (min-width: 768px) {
+          .our_products__carousel__button a {
+            padding: 15px 80px;
+            font-size: 18px; } }
+        @media (min-width: 1199px) {
+          .our_products__carousel__button a {
+            margin-top: 30px; } }
+      .our_products__carousel__button a:hover {
+        background-color: white;
+        color: #F7C200;
+        border: 2px solid #F7C200; }
 
 .swiper_products {
   width: 100%;
-  height: 100%; }
+  height: 500px; }
   .swiper_products .swiper-slide {
     width: 100% !important;
-    height: 100%;
+    height: 375px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1180,10 +1183,10 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center; }
-    @media (min-width: 997px) {
+    @media (min-width: 992px) {
       .swiper_products .swiper-slide {
-        width: 50% !important; } }
-    @media (min-width: 1299px) {
+        width: 33.33% !important; } }
+    @media (min-width: 1300px) {
       .swiper_products .swiper-slide {
         width: 25% !important; } }
 
