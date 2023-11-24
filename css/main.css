@@ -1041,6 +1041,12 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 100%; }
+  @media (min-width: 1199px) {
+    .our_products {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../../img/fondo-galeria_desktop.webp"); } }
   .our_products .container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1082,7 +1088,7 @@
       @media (min-width: 1199px) {
         .our_products__carousel__decoration {
           position: relative;
-          right: 13%;
+          right: 8%;
           display: flex;
           align-items: center;
           justify-content: flex-end;
@@ -1134,7 +1140,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      left: 34%; }
+      left: 33%; }
       @media (max-width: 1199px) {
         .our_products__carousel__button {
           width: 90%;
@@ -1165,7 +1171,7 @@
         border: 2px solid #F7C200; }
 
 .swiper_products {
-  width: 100%;
+  width: 97%;
   height: 500px; }
   .swiper_products .swiper-slide {
     width: 100% !important;

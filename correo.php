@@ -1,10 +1,10 @@
 <?php   		
                 var_dump($_POST);
 				//Destinatario
-				$mail_destinatario = 'contactohr43@gmail.com';
-				$subject = 'Solicitud Formulario GE';
+				$mail_destinatario = 'contacto@yanopagoluz.mx';
+				$subject = 'Solicitud Formulario Solares Energia';
 				$headers .= "From: ".$_POST['email']. "\r\n";
-        $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+                $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 				
 				
 				
@@ -25,12 +25,20 @@
                                                 .'<td class="tg-yw4l" style="color:blue;">'.$_POST['telefono'].'</td>'.
                                               '</tr>'.
                                               '<tr>
-                                                <td style="width:53%">Servicio:</td>'
-                                                .'<td class="tg-yw4l" style="color:blue;">'.$_POST['servicio'].'</td>'.
+                                                <td style="width:53%">Dirección:</td>'
+                                                .'<td class="tg-yw4l" style="color:blue;">'.$_POST['direccion'].'</td>'.
+                                              '</tr>'.
+                                            '<tr>
+                                                <td style="width:53%">Nombre_Cfe:</td>'
+                                                .'<td class="tg-yw4l" style="color:blue;">'.$_POST['nombre_recibo'].'</td>'.
                                               '</tr>'.
                                               '<tr>
-                                                <td style="width:53%">Comentarios:</td>'
-                                                .'<td class="tg-yw4l" style="color:blue;">'.$_POST['comentarios'].'</td>'.
+                                                <td style="width:53%">Numero_Cfe:</td>'
+                                                .'<td class="tg-yw4l" style="color:blue;">'.$_POST['numero_servicio'].'</td>'.
+                                              '</tr>'.
+                                              '<tr>
+                                                <td style="width:53%">Mensaje:</td>'
+                                                .'<td class="tg-yw4l" style="color:blue;">'.$_POST['mensaje'].'</td>'.
                                               '</tr>'.
                                               
                                             '</body>'.
