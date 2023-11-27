@@ -1,8 +1,8 @@
 <?php   		
                 var_dump($_POST);
 				//Destinatario
-				$mail_destinatario = 'contacto@yanopagoluz.mx';
-				$subject = 'Solicitud Formulario Solares Energia';
+				$mail_destinatario = 'contacto@energiasolarplayadelcarmen.com';
+				$subject = 'Solicitud Formulario Energía Solar Playa del Carmen';
 				$headers .= "From: ".$_POST['email']. "\r\n";
                 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 				
