@@ -1,10 +1,10 @@
 <?php   		
-                var_dump($_POST);
+        var_dump($_POST);
 				//Destinatario
-				$mail_destinatario = 'mmeza@licorne.mx';
+				$mail_destinatario = 'contacto@energiasolarplayadelcarmen.com';
 				$subject = 'Solicitud Formulario Energía Solar Playa del Carmen';
 				$headers .= "From: ".$_POST['email']. "\r\n";
-                $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 				
 				
 				
