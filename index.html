@@ -42,9 +42,9 @@
 
 			<div class="container-sm">
 
-				<div class="header__desktop__logo">
+				<a class="header__desktop__logo" href="index.html">
 					<img src="img/logo.webp" alt ="logo-header" width="100%" height="100%" />
-				</div>
+				</a>
 
 				<div class="header__desktop__pages">
 					<a class="header__desktop__pages--one" href="#hero" >
@@ -102,7 +102,7 @@
 						</div>
 					</a>
 
-                    <a class="header__desktop__pages--seven" href="" >
+                    <a class="header__desktop__pages--seven" href="https://energiasolarplayadelcarmen.com/blog" >
 						BLOG
 
 						<div class="header__desktop__pages--seven__form">
@@ -818,42 +818,42 @@
                     <div class="domestic__form__grid">
                         <div class="domestic__form__grid__input">
                             <label>Nombre:</label>
-                            <input id="nombre" name="nombre"  type="text"/>
+                            <input id="nombre" name="nombre"  type="text" required/>
                         </div>
 
                         <div class="domestic__form__grid__input">
                             <label>Correo:</label>
-                            <input  id="email" name="email"  type="text"/>
+                            <input  id="email" name="email"  type="text" required/>
                         </div>
                     </div>
 
                     <div class="domestic__form__grid">
                         <div class="domestic__form__grid__input">
                             <label>Telefono</label>
-                            <input id="telefono" name="telefono"  type="text"/>
+                            <input id="telefono" name="telefono"  type="text" required/>
                         </div>
 
                         <div class="domestic__form__grid__input">
                             <label>Dirección</label>
-                            <input  id="direccion" name="direccion"  type="text"/>
+                            <input  id="direccion" name="direccion"  type="text" required/>
                         </div>
                     </div>
 
                     <div class="domestic__form__grid">
                         <div class="domestic__form__grid__input">
                             <label>Nombre titular de recibo</label>
-                            <input id="nombre_recibo" name="nombre_recibo"  type="text"/>
+                            <input id="nombre_recibo" name="nombre_recibo"  type="text" required/>
                         </div>
 
                         <div class="domestic__form__grid__input">
                             <label>Número de servicio de recibo</label>
-                            <input  id="numero_servicio" name="numero_servicio"  type="text"/>
+                            <input  id="numero_servicio" name="numero_servicio"  type="text" required/>
                         </div>
                     </div>
 					
                     <div class="domestic__form__grid__input" style="display: flex; flex-direction: column;">
-                            <label>Mensaje</label>
-                            <textarea name="mensaje"  id="mensaje" ></textarea>
+                        <label>Mensaje</label>
+                        <textarea name="mensaje"  id="mensaje" required></textarea>
                     </div>
 
                     <div class="domestic__form__grid">
@@ -862,12 +862,12 @@
 
                             <div class="domestic__form__grid__check">
                                 <div class="domestic__form__grid__check__check_input">
-                                    <input type="checkbox" id="paneles" value="first_checkbox" />
+                                    <input type="checkbox" name="paneles" value="Paneles Solares" />
                                     <label>Paneles Solares</label>
                                 </div>
 
                                 <div class="domestic__form__grid__check__check_input">
-                                    <input type="checkbox" id="distribucion" value="first_checkbox" />
+                                    <input type="checkbox" name="paneles" value="Distribuición" />
                                     <label>Distribuición</label>
                                 </div>
 
@@ -882,11 +882,8 @@
                     
                     </div>
 
-              
-
 				</form>
-                
-				
+
 			</div>
 
 		</div>
